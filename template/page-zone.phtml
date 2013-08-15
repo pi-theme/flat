@@ -1,22 +1,56 @@
-Flat Theme
-=============
+<table>
+    <thead>
+        <tr>
+            <td colspan="3">{0}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{1}</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="3">{2}</td>
+                                </tr>
+                                <tr>
+                                    <td>{3}</td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td colspan="2">{4}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{5}</td>
+                                                <td>{6}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>{7}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>{content}</td>
+                    </tr>
+                </table>
+            </td>
+            <td>{8}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">{99}</td>
+        </tr>
+    </tfoot>
+</table>
 
-Pi Engine theme
-
-Flat design, inherited from Default theme.
-
-
-**Folder and file skeleton**
-
-* Templates REQUIRED for front:
-  *  tmplate/layout-front.phtml - complete layout template: header, footer, body, blocks, navigation
-* Stylesheet file REQUIRED:
-*  asset/css/style.css - main css file
-
-
-**Block zones**
-
-```
+<!--
+/* Block zones */
+/*
  |<- lt ->|<- ----------------        center        ---------------- ->|<- rt ->|
 
 
@@ -47,4 +81,5 @@ Flat design, inherited from Default theme.
  --------------------------------------------------------------------------------
 
  |<- lt ->|<- ----------------        center        ---------------- ->|<- rt ->|
-```
+ */
+//-->
